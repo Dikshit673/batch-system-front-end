@@ -1,38 +1,545 @@
-.App {
-  text-align: center;
+section {
+    height: auto;
+    overflow: hidden;
+    /* padding: 4rem 0; */
+    background-color: #fff;
+    box-shadow: inset 0px -16px 0px -15px #000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-brand {
+    color: red;
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-item {
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-item .nav-active {
+    color: red !important;
 }
 
-.App-link {
-  color: #61dafb;
+.back-redc {
+    background-color: red;
+    color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.back-whtc {
+    background-color: #fff;
+    color: #000;
 }
+
+/* ------------------hero---------------- */
+.hero-section {
+    height: 100vh;
+}
+
+.hero-left {
+    height: 100vh;
+}
+
+.hero-section h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.hero-design {
+    position: absolute;
+    width: 551px;
+    height: 383px;
+    border: 2px solid black;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.design1 {
+    top: calc(50% - 2rem);
+    left: calc(50% + 2rem);
+}
+
+.design3 {
+    top: calc(50% + 2rem);
+    left: calc(50% - 2rem);
+}
+
+.hero-section img {
+    width: 249px;
+    /* height: 504px; */
+}
+
+.phone {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+}
+
+.phone-1 {
+    left: calc(50% - 7.5rem);
+    top: calc(50% - 5rem);
+    z-index: 12;
+}
+
+.phone-2 {
+    z-index: 11;
+}
+
+.phone-3 {
+    left: calc(50% + 7.5rem);
+    top: calc(50% + 5rem);
+    z-index: 10;
+}
+
+.btn {
+    text-transform: capitalize;
+}
+
+.for-main-cont2 {
+    /* top: 50%; */
+    left: 50%;
+}
+
+/* -----------------feature section---------------- */
+.feature-section {
+    height: 100vh;
+}
+
+.feature-right-div {
+    height: 100vh;
+}
+
+.feat-for-main-cont2 {
+    top: 50%;
+    left: 50%;
+}
+
+.feat-phone {
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+
+}
+
+.heading-para {
+    text-transform: uppercase;
+    color: red;
+    line-height: 28px;
+    font-size: 18px;
+    letter-spacing: 16%;
+    font-weight: 500;
+}
+
+.head-h2 {
+    text-transform: capitalize;
+    color: #000;
+    font-weight: bolder;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.feature-section .feat-bot-headings h5 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000;
+}
+
+.feature-section .feat-bot-headings p {
+    opacity: 0.5;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000;
+}
+
+.comm-imgc {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.phone-imgc {
+    top: 55% !important;
+    left: 55% !important;
+}
+
+.color-imgc {
+    top: 40% !important;
+    left: 35% !important;
+}
+
+
+
+/* --------------------advantage-------------------------- */
+
+.advantage-text-div {
+    height: 100vh;
+}
+
+.for-circle-icon {
+    width: 48px;
+    height: 48px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.for-circle-icon svg {
+    font-size: 1.4rem;
+    /* color: #fff; */
+
+}
+
+.advan-section .advan-bot-body h6,
+.advan-section-2 .advan-bot-body-2 h6 {
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #000;
+    margin: 0 0 0 10px;
+}
+
+.advan-section .advan-bot-body p,
+.advan-section-2 .advan-bot-body-2 p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    opacity: 0.5;
+    color: #000;
+}
+
+/* ----------------------testimonial------------------- */
+
+.test-text-div {
+    height: 100vh;
+}
+
+.div-imgc {
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    /* border: 2px solid blue; */
+}
+
+.comm-transit {
+    transform: translate(-50%, -50%);
+}
+
+.comm-size {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border: 2px solid red;
+    border-radius: 50%;
+}
+
+.comm-size img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.pos-a {
+    width: 180px;
+    height: 180px;
+    top: 50%;
+    left: 50%;
+}
+
+.pos-b {
+    width: 95px;
+    height: 95px;
+    top: 0;
+    left: 100%;
+}
+
+.pos-c {
+    width: 65px;
+    height: 65px;
+    top: 100%;
+    left: 100%;
+}
+
+.pos-d {
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 0;
+}
+
+.pos-e {
+    width: 72px;
+    height: 72px;
+    top: 100%;
+    left: 0;
+}
+
+/* ----------------------------------faq------------------------ */
+
+.for-br50 {
+    border-radius: 10px;
+}
+
+.for-br50 h3 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 28px;
+}
+
+.for-br50 p {
+    /* opacity: 0.5; */
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* --------------------footer---------------- */
+h3 {
+    text-transform: capitalize;
+    font-size: 32px;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    list-style: none;
+    line-height: 42px;
+}
+
+.footer-bottom-box {
+    height: 104px;
+    border-top: 2px solid #696969;
+    display: grid;
+    place-items: center;
+}
+
+
+.footer-bottom-box p {
+    background-color: #fff;
+    line-height: 26px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+/* @media(min-width:1400px) {
+    .hero-section {
+        height: 60vh;
+    }
+
+    .hero-left {
+        height: 60vh;
+    }
+
+    .feature-section {
+        height: 60vh;
+    }
+
+    .feature-right-div {
+        height: 60vh;
+    }
+
+    .advan-section {
+        height: 60vh;
+    }
+
+    .advan-section-2 {
+        height: 60vh;
+    }
+
+    .advantage-text-div {
+        height: 60vh;
+    }
+
+    .test-text-div {
+        height: 60vh;
+    }
+}
+
+@media(min-width:1200px) {
+    .hero-section {
+        height: 70vh;
+    }
+
+    .hero-left {
+        height: 70vh;
+    }
+
+    .feature-section {
+        height: 70vh;
+    }
+
+    .feature-right-div {
+        height: 70vh;
+    }
+
+    .advan-section {
+        height: 70vh;
+    }
+
+    .advan-section-2 {
+        height: 70vh;
+    }
+
+    .advantage-text-div {
+        height: 70vh;
+    }
+
+    .test-text-div {
+        height: 70vh;
+    }
+}
+
+@media(min-width:992px) {
+    .hero-section {
+        height: 80vh;
+    }
+
+    .hero-left {
+        height: 80vh;
+    }
+
+    .feature-section {
+        height: 80vh;
+    }
+
+    .feature-right-div {
+        height: 80vh;
+    }
+
+    .advan-section {
+        height: 80vh;
+    }
+
+    .advan-section-2 {
+        height: 80vh;
+    }
+
+    .advantage-text-div {
+        height: 80vh;
+    }
+
+    .test-text-div {
+        height: 80vh;
+    }
+}
+
+@media(min-width:768px) {
+    .hero-section {
+        height: 90vh;
+    }
+
+    .hero-left {
+        height: 90vh;
+    }
+
+    .feature-section {
+        height: 90vh;
+    }
+
+    .feature-right-div {
+        height: 90vh;
+    }
+
+    .advan-section {
+        height: 90vh;
+    }
+
+    .advan-section-2 {
+        height: 90vh;
+    }
+
+    .advantage-text-div {
+        height: 90vh;
+    }
+
+    .test-text-div {
+        height: 90vh;
+    }
+}
+
+@media(min-width:576px) {
+    .hero-section {
+        height: 180vh;
+    }
+
+    .hero-left {
+        height: 90vh;
+    }
+
+    .feature-section {
+        height: 180vh;
+    }
+
+    .feature-right-div {
+        height: 90vh;
+    }
+
+    .advan-section {
+        height: 180vh;
+    }
+
+    .advan-section-2 {
+        height: 180vh;
+    }
+
+    .advantage-text-div {
+        height: 90vh;
+    }
+
+    .test-text-div {
+        height: 90vh;
+    }
+}
+
+@media(min-width:0px) {
+
+    section {
+        padding: 1rem;
+    }
+
+    .hero-section {
+        height: 180vh;
+    }
+
+    .hero-left {
+        height: 100vh;
+    }
+
+    .feature-section {
+        height: 180vh;
+    }
+
+    .feature-right-div {
+        height: 100vh;
+    }
+
+    .advantage-text-div {
+        height: 100vh;
+    }
+
+    .test-text-div {
+        height: 100vh;
+    }
+} */
