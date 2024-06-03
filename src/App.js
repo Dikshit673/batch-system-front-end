@@ -16,7 +16,7 @@ function App() {
         <Navbar />
       </header>
       <main>
-        {/* <Hero /> */}
+        <Hero />
         <Feature />
         <Advantages />
         <Testimonial />
