@@ -1,5 +1,10 @@
 import React from 'react'
 // import h from './myassets/Group 35924.svg'
+import g from './myassets/Group 35898.svg'
+import s from './myassets/iPhone-13-Pro-Front.svg'
+import i from './myassets/Group 35930.svg'
+import aa from './myassets/Group 1000004720.svg';
+import bb from './png-img/Group 1000004720.png'
 
 const Hero = () => {
     return (
@@ -23,7 +28,7 @@ const Hero = () => {
 
                         </div>
                     </div>
-                    <div className="col-12 col-md-6">
+                    {/* <div className="col-12 col-md-6">
                         <div className='h-100 position-relative for-main-cont1'>
                             <div className=' h-100 position-absolute for-main-cont2'>
                                 <div className=' h-100 position-relative '>
@@ -40,6 +45,14 @@ const Hero = () => {
                                     <img src="assets/iphone-13-pro-Front-(8).png" alt="iphone13" className=' position-absolute phone phone-3' />
                                 </div>
                             </div>
+                        </div>
+                    </div> */}
+
+                    <div className="col-12 col-md-6">
+                        <div className='h-100 position-relative d-flex justify-content-center align-items-center'>
+                            <img src={g} alt={g} className=' img-fluid position-absolute top-50 z-1 comm-imgc' />
+                            <img src={aa} alt={aa} className=' img-fluid position-absolute top-50 z-2 comm-imgc phone-imgc' />
+                            <img src={i} alt={i} className=' img-fluid position-absolute top-50 z-0 comm-imgc color-imgc' />
                         </div>
                     </div>
                 </div>
