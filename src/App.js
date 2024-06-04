@@ -1,32 +1,14 @@
-import './App.css';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Footer from './components/Footer';
-import Feature from './components/Feature';
-import Advantages from './components/Advantages';
-import Testimonial from './components/Testimonial';
-import Faq from './components/Faq';
-// import { BrowserRouter } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Web from './Pages/Web';
 
 function App() {
   return (
     <>
-      {/* <BrowserRouter> */}
-      <header>
-        <Navbar />
-      </header>
-      <main>
-        <Hero />
-        <Feature />
-        <Advantages />
-        <Testimonial />
-        <Faq />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-
-      {/* </BrowserRouter> */}
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Web />}></Route>
+        </Routes>
+      </Router>
     </>
   );
 }

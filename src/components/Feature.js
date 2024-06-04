@@ -9,7 +9,7 @@ import o from './myassets/Icon.svg'
 
 const Feature = () => {
     return (
-        <section className='feature-section'>
+        <section className='feature-section' id='about'>
             <div className='h-100 container'>
                 <div className="row h-100">
                     {/* <div className="col-12 col-md-6">

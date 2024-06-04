@@ -12,7 +12,7 @@ const Advantages = () => {
 
     return (
         <>
-            <section className='advan-section'>
+            <section className='advan-section' id='feature'>
                 <div className="container">
                     <div className="row h-100">
 
@@ -44,7 +44,7 @@ const Advantages = () => {
                 </div>
             </section>
             {/* --------------------------------------2nd section------------------------ */}
-            <section className='advan-section'>
+            <section className='advan-section' id='pricing'>
                 <div className="container">
                     <div className="row h-100">
 

@@ -5,7 +5,7 @@ import aa from './png-img/three-sroup.png'
 
 const Hero = () => {
     return (
-        <section className='hero-section'>
+        <section className='hero-section' id='home'>
             <div className=' container h-100'>
                 <div className="row h-100">
                     <div className="col-12 col-md-6 d-flex justify-content-start align-items-center hero-left">

@@ -70,7 +70,7 @@ const Testimonial = () => {
     // console.log("testbodyData", testbodyData);
     // console.log(myData.testimonials[0])
     return (
-        <section className='testimonial-section pt-4'>
+        <section className='testimonial-section pt-4' id='testimonial'>
             <div className=' container'>
                 <div className=' text-capitalize text-center'>
                     <p className=' m-0 top-para'>testimonial</p>
