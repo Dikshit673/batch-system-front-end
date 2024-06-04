@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import g from './myassets/Group 35898.svg'
 import i from './myassets/Group 35930.svg'
 import aa from './png-img/image1.png'
@@ -10,64 +10,19 @@ import ee from './png-img/image5.png'
 import myData from '../data.json';
 
 const Testimonial = () => {
-    const [myNewData, setMyNewData] = useState([]);
-    const [myNewData2, setMyNewData2] = useState(myNewData);
-    const [testbodyData, setTestbodyData] = useState([]);
-
-    useEffect(() => {
-        let tempuser = myData.testimonials.map((d, id) => {
-            return { ...d, isActive: false }
-        })
-
-        let tempuser2 = tempuser.map((currVal, id) => {
-            if (id === 0) {
-                return { ...currVal, isActive: true }
-            } else {
-                return { ...currVal, isActive: false }
-            }
-        })
-
-        // let tempuser3 = tempuser.filter((currData, id) => {
-        //     return id === 0;
-        // }).map((newVal) => {
-        //     return { ...newVal, isActive: true }
-        // })
-
-        setMyNewData(tempuser);
-        setMyNewData2(tempuser2);
-
-        tempuser2.filter((currData, id) => {
-            return id === 0;
-        }).map((newVal) => {
-            setTestbodyData(newVal)
-            return newVal
-        })
-
-    }, []);
+    const [testbodyData, setTestbodyData] = useState(myData.testimonials);
 
     const clickingAvtar = (identity) => {
-        // console.log(identity);
-
-        let tempuser2 = myNewData2.map((currVal, id) => {
-            if (id === identity) {
-                return { ...currVal, isActive: true }
-            } else {
-                return { ...currVal, isActive: false }
-            }
+        console.log(identity)
+        let tempData = myData.testimonials.filter((cData, id) => {
+            return identity === id
         })
-        // console.log("tempuser2", tempuser2);
-        setMyNewData2(tempuser2);
-        tempuser2.filter((val, id) => {
-            return id === identity
-        }).map((newval) => {
-            setTestbodyData(newval)
-            return newval;
-        });
-    }
 
-    // console.log("myNewData", myNewData);
-    // console.log("myNewData2", myNewData2);
-    // console.log("testbodyData", testbodyData);
+        setTestbodyData({ ...tempData });
+        // console.log("clicking", tempData);
+
+    }
+    console.log("hjbasdj", testbodyData);
     // console.log(myData.testimonials[0])
     return (
         <section className='testimonial-section pt-4'>
@@ -106,13 +61,13 @@ const Testimonial = () => {
                     <div className="col-12 col-md-6 test-text-div d-flex flex-column justify-content-center test-left">
                         <div>
                             <h6 className='body-heading'>The best financial accounting app ever!</h6>
-                            <p className='body-para'>{testbodyData.feedback}</p>
+                            <p className='body-para'>{testbodyData[0].feedback}</p>
                         </div>
-                        <div className=' d-flex align-items-center avatar-tbox'>
-                            {myNewData2.map((currVal, id) => {
+                        <div>
+                            {myData.testimonials.map((currVal, id) => {
                                 return (
                                     <React.Fragment key={id}>
-                                        <img src={currVal.avatar} alt="" className={`img-fluid m-1 avtar-size ${currVal.isActive ? "active-avt" : ""}`} onClick={() => clickingAvtar(id)} />
+                                        <img src={currVal.avatar} alt="" className=' m-1' onClick={() => clickingAvtar(id)} />
                                     </React.Fragment>
                                 )
                             })}

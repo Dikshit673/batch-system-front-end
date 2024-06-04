@@ -2,17 +2,17 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <section className=' py-5'>
+        <section className='footer-section py-5'>
             <div className=' container'>
-                <div className="row">
-                    <div className="col-12 col-sm-6 col-md-3 col-lg-2 mt-3">
+                <div className="row pt-3">
+                    <div className="col-12 col-sm-6 col-md-3 col-lg-2 mb-2 foot-body">
                         <h3>uifry</h3>
                         <ul>
                             <li> help@frybix.com</li>
                             <li>+1 234 456 678 89</li>
                         </ul>
                     </div>
-                    <div className="col-12 col-sm-6 col-md-3 col-lg-2">
+                    <div className="col-12 col-sm-6 col-md-3 col-lg-2 mb-2 foot-body">
                         <h3>links</h3>
                         <ul>
                             <li>Home</li>
@@ -21,7 +21,7 @@ const Footer = () => {
                             <li>blogs</li>
                         </ul>
                     </div>
-                    <div className="col-12 col-sm-6 col-md-3 col-lg-2">
+                    <div className="col-12 col-sm-6 col-md-3 col-lg-2 mb-2 foot-body">
                         <h3>legal</h3>
                         <ul>
                             <li>terms of use</li>
@@ -29,7 +29,7 @@ const Footer = () => {
                             <li>cookie policy</li>
                         </ul>
                     </div>
-                    <div className="col-12 col-sm-6 col-md-3 col-lg-2">
+                    <div className="col-12 col-sm-6 col-md-3 col-lg-2 mb-2 foot-body">
                         <h3>product</h3>
                         <ul>
                             <li>take tour</li>
@@ -37,7 +37,7 @@ const Footer = () => {
                             <li>reviews</li>
                         </ul>
                     </div>
-                    <div className="col-12 col-sm-6 col-md-3 col-lg-4">
+                    <div className="col-12 col-sm-6 col-md-3 col-lg-4 mb-2 foot-body">
                         <h3>newsletter</h3>
                         <ul>
                             <li>stay up to date</li>

@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const Navbar = () => {
     const [hamtoggle, setHamtoggle] = useState(false);
     return (
-        <section>
+        <section className='navbar-section'>
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container">
                     <a className="navbar-brand me-5" href="#uifry">uifry</a>

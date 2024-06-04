@@ -29,12 +29,27 @@
         {
             "name": "User One",
             "feedback": "This app is fantastic! It has changed my life.",
-            "avatar": "https://via.placeholder.com/50"
+            "avatar": "assets/image1.png"
         },
         {
             "name": "User Two",
             "feedback": "I can't imagine my daily routine without this app.",
-            "avatar": "https://via.placeholder.com/50"
+            "avatar": "assets/image2.png"
+        },
+        {
+            "name": "User Three",
+            "feedback": "This app is so eligent, so beautiful! It has changed my life.",
+            "avatar": "assets/image3.png"
+        },
+        {
+            "name": "User Four",
+            "feedback": "I can't imagine that this app can change my daily life, im so happy.",
+            "avatar": "assets/image4.png"
+        },
+        {
+            "name": "User Five",
+            "feedback": "This app is supereb! It has awesome features.",
+            "avatar": "assets/image5.png"
         }
     ],
     "pricing": [
