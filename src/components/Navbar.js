@@ -58,10 +58,15 @@ const Navbar = () => {
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <div className="container">
                         <a className="navbar-brand me-5" href="#uifry">uifry</a>
-                        <button className="navbar-toggler" type="button" onClick={() => setHamtoggle(!hamtoggle)}>
+                        <button className="navbar-toggler" type="button" title='hamburgur-btn' onClick={() => setHamtoggle(!hamtoggle)}>
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className={`collapse navbar-collapse for-pos-fix show ${hamtoggle ? "new-trans-class" : ""}`} id="navbarSupportedContent">
+                            <div className='xmark-class d-flex align-items-center'>
+                                <div className=' d-flex justify-content-center align-items-center xmark-div' onClick={() => { setHamtoggle(false) }}>
+                                    <i className="fa-solid fa-xmark"></i>
+                                </div>
+                            </div>
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
 
                                 {sectionIds.map((sectionId, id) => {
