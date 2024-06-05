@@ -90,9 +90,27 @@ header {
     color: red;
 }
 
-/* .nav-link:visited {
-    color: red;
-} */
+.xmark-class {
+    height: 69.19px;
+    background-color: #fff;
+}
+
+.xmark-class .xmark-div {
+    width: 55px;
+    height: 39px;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.xmark-class .xmark-div:active,
+.xmark-class .xmark-div:hover {
+    border: 3px solid #000;
+}
+
+.xmark-class .xmark-div i {
+    font-size: 30px;
+}
 
 /* --------------------------------------back to top------------------ */
 
@@ -615,6 +633,10 @@ input {
     .test-right {
         height: 80vh;
     }
+
+    .xmark-class {
+        display: none !important;
+    }
 }
 
 @media(min-width:1200px) {
@@ -666,18 +688,22 @@ input {
 @media(max-width:992px) {
     .for-pos-fix {
         position: fixed;
-        top: 69.19px;
+        top: 0;
         left: auto;
+        bottom: 0;
         width: 100%;
-        background-color: #fff;
-        z-index: -1;
+        background-color: #ffffff54;
+        z-index: 99;
         transform: translateX(100%);
         transition: all 1s ease;
+        padding: 0 0 0 1rem;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: blur(5px);
     }
 
     .new-trans-class {
         /* left: auto !important; */
-        transform: translateX(0);
+        transform: translateX(50%);
     }
 
     .ms-3 {
